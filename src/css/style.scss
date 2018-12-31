@@ -1,0 +1,227 @@
+@keyframes fade{
+0%{
+opacity:0;
+}
+100%{
+    opacity: 100%;
+}
+}
+@keyframes draw-finger {
+    0%{
+     stroke-dashoffset: -1600;  
+   }
+     
+   100% {
+     stroke-dashoffset: 0;
+   }
+ }
+
+.fade{
+    animation: fade 0.5s;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f7f7;
+    transition: opacity 1s;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    
+  }
+
+  .hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+svg { 
+  width: 200px;
+  
+}
+
+
+
+.st0{
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 0;
+    stroke-width: 3px;
+    animation: draw-finger 2.5s ease;
+  
+}
+
+@import url('https://fonts.googleapis.com/css?family=Neuton');
+html,body{
+    background-color: #f2f2f2;
+}
+body{
+    padding: 60px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  header img {
+    width: 100px;
+  }
+  header a{
+    text-decoration: none;
+  }
+body{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Neuton', serif;
+    font-size: 24px;
+    line-height: 1.2em;
+    position: relative;
+}
+
+.fade .text-hidden.show {
+    opacity: 1;
+  }
+  
+  .text-hidden .fade  {
+    transition: all 0.4s ease-out;
+    opacity: 0;
+    display: none;
+    
+  }
+
+.link-area{
+    margin-top: 90px;
+    display: none;
+
+ol, ul{
+    list-style:none;
+    margin: 0 auto;
+    max-width: 600px;
+}
+li{
+    font-size: 72px;
+    line-height: 1.3em;
+    padding: 15px;
+    max-width: 600px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    color: #000;
+    margin: auto 0 0;
+    // position: relative;
+    display: inline;
+}
+li a img{
+    display:none;
+    width: 100px; 
+    height: 100px; 
+    position: absolute; 
+    top: 20px; 
+    left: 0;
+    border-radius: 50%;
+    -webkit-transform: translateY(-100%);
+}
+li a {
+    text-decoration: none;
+    color: #000;
+    position:relative;
+}
+li a:hover img{
+
+    display: block;
+}
+}
+.text-hidden{
+    margin-top: 90px;
+    display: block;
+    
+}
+.barba-container{
+    display: flex;
+    flex-flow: column;
+    max-width: 600px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.gallery{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+
+#gallery-images{
+    margin: 50px;
+    border: 20px solid black;
+    max-width: 600px;
+    min-width:300px;
+    animation: fade 1s ease-in-out;
+    align-self:center;
+}
+
+.back {
+    align-self:center;
+}
+.back img{
+    max-width: 100px;
+    padding-bottom: 10px;
+}
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+.logo{
+    height: 200px;
+    border-right: 3px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    padding-right: 20px;
+}
+
+ul li{
+    list-style:none;
+    font-size: 32px;
+    line-height: 1;
+    font-family: 'Neuton', serif;
+    padding-left:20px;
+}
+ul li a{
+    text-decoration: none;
+    color:black;
+}
+ul li:hover{
+    color:#d39c9c;
+}
+ul a:hover{
+    color:#d39c9c;
+}
+}
+.tap-copy{
+    align-self: center;
+    margin-top: 40px;
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+    li{
+        font-size: 60px; 
+    }
+    .welcome ul li {
+        font-size: 18px;
+        font-family: 'Neuton', serif;
+        padding-left: 10px;
+        line-height: 1.8;
+    }
+}

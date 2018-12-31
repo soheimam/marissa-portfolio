@@ -1,0 +1,17 @@
+{
+  "name": "m-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "cd dist && aws s3 sync . s3://marissa-photography --exclude *git/* --exclude 'node_modules/*' --acl public-read --delete"
+  },
+  "devDependencies": {
+    "barba.js": "^1.0.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
+  }
+}
