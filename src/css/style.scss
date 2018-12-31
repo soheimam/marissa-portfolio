@@ -84,6 +84,9 @@ body{
     position: relative;
 }
 
+.text-hidden{
+    text-align: center;
+}
 .fade .text-hidden.show {
     opacity: 1;
   }
@@ -93,6 +96,16 @@ body{
     opacity: 0;
     display: none;
     
+  }
+
+  .text-hidden p{
+      margin:15px;
+    
+
+  }
+
+  .qoute{
+    font-style: italic;
   }
 
 .link-area{
@@ -223,5 +236,9 @@ and (max-device-width : 667px) {
         font-family: 'Neuton', serif;
         padding-left: 10px;
         line-height: 1.8;
+    }
+    .text-hidden p{
+        font-size:18px
+  
     }
 }
