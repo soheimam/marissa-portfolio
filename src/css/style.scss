@@ -20,6 +20,21 @@ opacity:0;
     animation: fade 0.5s;
 }
 
+@keyframes anchor-underline {
+    0%, 10% {
+      left: 0;
+      right: 100%;
+    }
+    40%, 60% {
+      left: 0;
+      right: 0;
+    }
+    90%, 100% {
+      left: 100%;
+      right: 0;
+    }
+  }
+
 .loader{
     position: fixed;
     top: 0;
@@ -229,6 +244,29 @@ a {
 a:hover{
     color:#d39c9c;
 }
+
+.animated{
+    border-bottom: .1em solid #d39c9c;
+    width:0;
+    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
+}
+
+footer{
+    background-color: #efe2e2;;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+footer a{
+    margin-right: 20px;
+}
+
+
 .tap-copy{
     align-self: center;
     margin-top: 40px;

@@ -98,6 +98,7 @@ $(document).ready(function (event) {
         var item = 1
         $("#image").attr("src", `https://s3.eu-west-3.amazonaws.com/marissa-photography/img/${person}/${item}.jpg`);
         $("#image").on('click', (event) => {
+          
           item++
 
           fetch(`https://s3.eu-west-3.amazonaws.com/marissa-photography/img/${person}/${item}.jpg`)
